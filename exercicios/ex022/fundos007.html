@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centraização vertical</title>
     <style>
-        #conteiner {   
+        #conteiner { 
+            position: relative;  
             background-color: black;
             height: 500px;
-            position: relative;
+            padding: 10px;
+            
+            
 
         }
         #conteudo {
-            background-color: white;
-            height: 250px;
-            width: 250px;
-            padding: 20px;
             position: absolute;
+            background-color: white;
+            height: 200px;
+            width: 400px;
+                      
 
             left: 50%;
-            right: 50%;
+            top: 50%;
 
-            transform: translate(50%, 50%);
+            transform: translate(-50%, -50%);
 
         }
     </style>
